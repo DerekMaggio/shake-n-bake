@@ -1,0 +1,47 @@
+{
+  "keystore-builder": {
+    "buildx.build.provenance": {
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/jdk@17.0.14-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "893a8d2c41687dc17b25d9394dd98112f3f816ecc6193886868a09e481a0f77b"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "build-arg:GROUP_ID": "1000",
+            "build-arg:GROUP_NAME": "huloop",
+            "build-arg:JDK_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/jdk:17.0.14-20250626131114",
+            "build-arg:USER_HOME": "/home/huloop",
+            "build-arg:USER_ID": "1000",
+            "build-arg:USER_NAME": "huloop",
+            "target": "keystore-builder"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ]
+        },
+        "environment": {
+          "platform": "linux/amd64"
+        }
+      }
+    },
+    "buildx.build.ref": "default/default/pv2fcmshwetv6uyxnsu6hmwpz",
+    "containerimage.config.digest": "sha256:96fa6525d7621ccf31734ef1e180d6faf971d3f1f2de79c6e502eb487ee1abc1",
+    "containerimage.digest": "sha256:96fa6525d7621ccf31734ef1e180d6faf971d3f1f2de79c6e502eb487ee1abc1",
+    "image.name": "ghcr.io/agreeya-huloop/sidecars/keystore-builder:20250801481442"
+  }
+}

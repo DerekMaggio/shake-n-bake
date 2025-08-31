@@ -1,0 +1,18 @@
+{
+  "devcontainers/azure-sso": [
+    "temp",
+    "20250624231941"
+  ],
+  "devcontainers/huloop-dev-tools": [
+    "temp",
+    "20250624231941"
+  ],
+  "devcontainers/huloop-v5": [
+    "temp",
+    "20250624231941"
+  ],
+  "devcontainers/workflow-ui": [
+    "temp",
+    "20250624231941"
+  ]
+}
