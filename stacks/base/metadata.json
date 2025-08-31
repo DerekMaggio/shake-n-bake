@@ -1,0 +1,58 @@
+{
+  "build-ubuntu": {
+    "buildx.build.provenance": {
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/ubuntu@24.04?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "7c06e91f61fa88c08cc74f7e1b7c69ae24910d745357e0dfe1d2c0322aaf20f9"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "build-arg:GROUP_ID": "1000",
+            "build-arg:GROUP_NAME": "developer",
+            "build-arg:JAVA_VERSION": "17.0.14",
+            "build-arg:MAVEN_VERSION": "3.9.8",
+            "build-arg:MONGOSH_VERSION": "2.5.1",
+            "build-arg:MONGO_TOOLS_VERSION": "100.12.1",
+            "build-arg:MONGO_VERSION": "8.0.5",
+            "build-arg:NODE_VERSION": "20.17.0",
+            "build-arg:PYTHON_VERSION": "3.12.5",
+            "build-arg:TERRAFORM_VERSION": "1.9.8",
+            "build-arg:TOMCAT_VERSION": "9.0.107",
+            "build-arg:UBUNTU_VERSION": "24.04",
+            "build-arg:USER_HOME": "/home/developer",
+            "build-arg:USER_ID": "1000",
+            "build-arg:USER_NAME": "developer",
+            "build-arg:WF_NODE_VERSION": "18.20.5",
+            "build-arg:YQ_VERSION": "4.45.1",
+            "target": "ubuntu-base"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ]
+        },
+        "environment": {
+          "platform": "linux/amd64"
+        }
+      }
+    },
+    "buildx.build.ref": "default/default/kt9fzguv3il1dp3fae0a3b2dg",
+    "containerimage.config.digest": "sha256:fefe57e35684ebad60223e7d4e1c89ad3cd0ace1d4609a889d83655e8a47ef1a",
+    "containerimage.digest": "sha256:fefe57e35684ebad60223e7d4e1c89ad3cd0ace1d4609a889d83655e8a47ef1a",
+    "image.name": "docker.io/base/ubuntu:24.04,docker.io/base/ubuntu:24.04-20250823451721"
+  }
+}

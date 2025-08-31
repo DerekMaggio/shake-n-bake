@@ -1,0 +1,7 @@
+{
+    "remote": "",
+    "pathDefinitions": [
+        { "filePath": "../../shared_functions.hcl",   "isRemote": false },
+        { "filePath": "docker-bake.hcl", "isRemote": false }
+    ]
+}

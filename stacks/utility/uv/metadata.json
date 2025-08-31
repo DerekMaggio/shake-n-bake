@@ -1,0 +1,41 @@
+{
+  "build-version-bump": {
+    "buildx.build.provenance": {
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/ghcr.io/astral-sh/uv@python3.12-alpine?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "8503714018c0ec723b2bb7f2fc928870392b67c8d57da918829a7bc1d52612f1"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "build-arg:SCRIPT_FILE": "/scripts/version_bump.py"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ]
+        },
+        "environment": {
+          "platform": "linux/amd64"
+        }
+      }
+    },
+    "buildx.build.ref": "default/default/ok2s69wrmy5356fsrtgeqktq3",
+    "containerimage.config.digest": "sha256:ab37755be1ce69a57f17fdd7ab157ea965e89085ddf566481405763175dcceb5",
+    "containerimage.digest": "sha256:ab37755be1ce69a57f17fdd7ab157ea965e89085ddf566481405763175dcceb5",
+    "image.name": "docker.io/utility/version-bump:latest"
+  }
+}

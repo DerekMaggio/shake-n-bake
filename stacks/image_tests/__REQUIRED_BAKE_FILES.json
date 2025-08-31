@@ -1,0 +1,10 @@
+{
+  "remote": "",
+  "pathDefinitions": [
+    { "filePath": "../../config/versions.hcl",         "isRemote": false },
+    { "filePath": "../../config/user.hcl",             "isRemote": false },
+    { "filePath": "../base_image_manifest_tools.hcl",  "isRemote": false },
+    { "filePath": "./images_under_test.hcl",           "isRemote": false },
+    { "filePath": "docker-bake.hcl",                   "isRemote": false }
+  ]
+}

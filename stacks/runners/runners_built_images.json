@@ -1,0 +1,11 @@
+{
+  "ghcr.io/agreeya-huloop/okta-service": [
+    "20250708141657"
+  ],
+  "ghcr.io/agreeya-huloop/workflow-service": [
+    "20250708141657"
+  ],
+  "huloop/okta-service": [
+    "20250708141657"
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "okta": {
+    "buildx.build.provenance": {
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/jdk@17.0.14-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "893a8d2c41687dc17b25d9394dd98112f3f816ecc6193886868a09e481a0f77b"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/jre@17.0.14-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "d17f39ce0477879158c30c9bfa3a2768a8507f7d8191365ba12759b301cc15f0"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/ubuntu@24.04-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "6cb73e0cab8f23d2b97521ba112b8d6ccccd93f60bb9888fc26a7b0fc74324ac"
+          }
+        },
+        {
+          "uri": "https://aka.ms/downloadazcopy-v10-linux",
+          "digest": {
+            "sha256": "9a11a05213d78034a057677c9a859cbcf56216802dc1f8471c7c822e180da50d"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "build-arg:DOWNLOAD_URL": "https://huloopartifactory.blob.core.windows.net/github-action-artifacts/pp/huloop_artifacts.zip",
+            "build-arg:JAR_FILTER": "huloop-sso*.jar",
+            "build-arg:JDK_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/jdk:17.0.14-20250626131114",
+            "build-arg:JRE_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/jre:17.0.14-20250626131114",
+            "build-arg:UBUNTU_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/ubuntu:24.04-20250626131114",
+            "local-sessionid:context": "kz4nv1gjwvb1waxxmotq9i2vt",
+            "local-sessionid:dockerfile": "kz4nv1gjwvb1waxxmotq9i2vt",
+            "target": "spring-boot-runner"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ]
+        },
+        "environment": {
+          "platform": "linux/amd64"
+        }
+      }
+    },
+    "buildx.build.ref": "default/default/abwahxg955lx2st2gu0qk9uh6",
+    "containerimage.config.digest": "sha256:0906b201b95e56ac79516076be0dc4198571f8b9a6d59c89b85728d9da1138e0",
+    "containerimage.digest": "sha256:0906b201b95e56ac79516076be0dc4198571f8b9a6d59c89b85728d9da1138e0",
+    "image.name": "ghcr.io/agreeya-huloop/okta-service:20250708141657,docker.io/huloop/okta-service:20250708141657"
+  },
+  "workflow": {
+    "buildx.build.provenance": {
+      "buildType": "https://mobyproject.org/buildkit@v1",
+      "materials": [
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/jdk@17.0.14-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "893a8d2c41687dc17b25d9394dd98112f3f816ecc6193886868a09e481a0f77b"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/jre@17.0.14-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "d17f39ce0477879158c30c9bfa3a2768a8507f7d8191365ba12759b301cc15f0"
+          }
+        },
+        {
+          "uri": "pkg:docker/ghcr.io/agreeya-huloop/base/ubuntu@24.04-20250626131114?platform=linux%2Famd64",
+          "digest": {
+            "sha256": "6cb73e0cab8f23d2b97521ba112b8d6ccccd93f60bb9888fc26a7b0fc74324ac"
+          }
+        },
+        {
+          "uri": "https://aka.ms/downloadazcopy-v10-linux",
+          "digest": {
+            "sha256": "9a11a05213d78034a057677c9a859cbcf56216802dc1f8471c7c822e180da50d"
+          }
+        }
+      ],
+      "invocation": {
+        "configSource": {
+          "entryPoint": "Dockerfile"
+        },
+        "parameters": {
+          "frontend": "dockerfile.v0",
+          "args": {
+            "build-arg:DOWNLOAD_URL": "https://huloopartifactory.blob.core.windows.net/github-action-artifacts/pp/huloop_artifacts.zip",
+            "build-arg:JAR_FILTER": "huloop-workflow*.jar",
+            "build-arg:JDK_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/jdk:17.0.14-20250626131114",
+            "build-arg:JRE_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/jre:17.0.14-20250626131114",
+            "build-arg:UBUNTU_BASE_IMAGE": "ghcr.io/agreeya-huloop/base/ubuntu:24.04-20250626131114",
+            "local-sessionid:context": "kz4nv1gjwvb1waxxmotq9i2vt",
+            "local-sessionid:dockerfile": "kz4nv1gjwvb1waxxmotq9i2vt",
+            "target": "spring-boot-layered-runner"
+          },
+          "locals": [
+            {
+              "name": "context"
+            },
+            {
+              "name": "dockerfile"
+            }
+          ]
+        },
+        "environment": {
+          "platform": "linux/amd64"
+        }
+      }
+    },
+    "buildx.build.ref": "default/default/96lelqasv4et77i9hvdko7hpv",
+    "containerimage.config.digest": "sha256:e2a51f45ba260b003bda285dc704bda7129b0316f071c8356885547dc3682927",
+    "containerimage.digest": "sha256:e2a51f45ba260b003bda285dc704bda7129b0316f071c8356885547dc3682927",
+    "image.name": "ghcr.io/agreeya-huloop/workflow-service:20250708141657"
+  }
+}
